@@ -60,3 +60,8 @@ Open ```/Applications/MAMP/conf/apache/extra/httpd-vhosts.conf```. Configure the
 
 View logs in the locations you set in your ```CustomLog``` and ```ErrorLog``` definitions above. 
 
+___
+#### Other potentially useful reference material
+* [http://serverfault.com/questions/73861/catch-all-access-log-with-apache-virtual-hosts](http://serverfault.com/questions/73861/catch-all-access-log-with-apache-virtual-hosts)
+* [http://serverfault.com/questions/315866/apache-server-logs-help?rq=1](http://serverfault.com/questions/315866/apache-server-logs-help?rq=1) 
+
