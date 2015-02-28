@@ -91,10 +91,10 @@ To https://github.com/ericdorsey/MermaidExample.git
    
 ~/PhpstormProjects/Mermaid (gh-pages) $ git checkout master
 Switched to branch 'master'
-
 ```
 
 Changes will now be visible at:  
+
 ```http://yourname.github.io/projectname```.
 
 ___
