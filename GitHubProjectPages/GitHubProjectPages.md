@@ -55,6 +55,7 @@ Now we have ```master``` and ```gh-pages``` branches:
 *+ [gh-pages] initial commit
 ```
 ___
+
 ## Mirror ```gh-pages``` to ```master```
 
 **What:**  
@@ -64,6 +65,7 @@ Stack Overflow discussion:
 [http://stackoverflow.com/questions/5807459/github-mirroring-gh-pages-to-master](http://stackoverflow.com/questions/5807459/github-mirroring-gh-pages-to-master)
 
 ___
+
 ### Keep things up to date manually
 
 [http://stackoverflow.com/a/5824720/853178](http://stackoverflow.com/a/5824720/853178)
@@ -94,7 +96,9 @@ Switched to branch 'master'
 
 Changes will now be visible at:  
 ```http://yourname.github.io/projectname```.
+
 ___
+
 
 ### Keep things up to date automatically
 
@@ -146,6 +150,7 @@ Changes will now be visible at:
 ```http://yourname.github.io/projectname```.
 
 ---
+
 ### Useful Links
 * [http://git-scm.com/book/it/v2/Git-Internals-The-Refspec#Pushing-Refspecs](http://git-scm.com/book/it/v2/Git-Internals-The-Refspec#Pushing-Refspecs)
 * [http://stackoverflow.com/questions/5807459/github-mirroring-gh-pages-to-master](http://stackoverflow.com/questions/5807459/github-mirroring-gh-pages-to-master)
