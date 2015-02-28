@@ -95,7 +95,9 @@ Switched to branch 'master'
 
 Changes will now be visible at:  
 
-```http://yourname.github.io/projectname```.
+```
+http://yourname.github.io/projectname
+```
 
 ___
 
@@ -147,7 +149,10 @@ To https://github.com/ericdorsey/test123.git
 ```
 
 Changes will now be visible at:  
-```http://yourname.github.io/projectname```.
+
+```
+http://yourname.github.io/projectname
+```
 
 ---
 
