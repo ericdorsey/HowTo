@@ -1,11 +1,15 @@
 # Create GitHub Project Pages
 
-**What**:  
+**What are Github Project Pages**:  
 Pages hosted at http://yourusername.github.io/projectname
 
+**Objectives of this How To**:  
+1. Create a project page   
+2. Keep it in sync w/ the repo code
 ___
 
 The official Github guide:  
+
 [https://help.github.com/articles/creating-project-pages-manually/](https://help.github.com/articles/creating-project-pages-manually/)
 
 They say:
@@ -14,12 +18,14 @@ They say:
 So they recommend creating a freshly cloned repo, which I guess they are trying to protect the original code base. Is the idea then that you merge from the original repo to your new ```gh-pages``` repo whenever you make a change (which you need to merge branches anyway with the Thinkful method below) and need to update the github.io project page?
 
 I prefer the Thinkful method below -- having both ```master``` and ```gh-pages``` branhces in the same (*original*) repo.
+
+I'm not going to be following the Github guide above.
 ___
 
-Thinkful tutorial:  
+Let's use this Thinkful tutorial instead, because it creates the ```gh-pages``` branch inside the existing repo:
+
 [http://www.thinkful.com/learn/a-guide-to-using-github-pages/start/existing-project/project-page/existing-repo/](http://www.thinkful.com/learn/a-guide-to-using-github-pages/start/existing-project/project-page/existing-repo/)
 
-Example following the Thinkful methodology, which starts in the existing repo:
 
 > At the command line, make sure you are in your local project repo.
 
@@ -35,17 +41,7 @@ The branch name ```gh-pages``` is a special branch that github uses to get files
 Switched to a new branch 'gh-pages'
 ```
 
-> Make sure your home page is at the base of your repo directory and is named ```index.html``` so that GitHub knows to display it.  
-Push your new branch to GitHub!
-
-```
-~/PhpstormProjects/Mermaid (gh-pages) $ git push origin gh-pages
-Total 0 (delta 0), reused 0 (delta 0)
-To https://github.com/ericdorsey/MermaidExample.git
- * [new branch]      gh-pages -> gh-pages
-```
-
-Now we have ```master``` and ```gh-pages``` branches:  
+Note that we have now have ```master``` and ```gh-pages``` branches:  
 
 ```
 ~/PhpstormProjects/Mermaid (gh-pages) $ git show-branch
@@ -53,6 +49,18 @@ Now we have ```master``` and ```gh-pages``` branches:
  ! [master] initial commit
 --
 *+ [gh-pages] initial commit
+```
+
+
+> Make sure your home page is at the base of your repo directory and is named ```index.html``` so that GitHub knows to display it.  
+
+> Push your new branch to GitHub!
+
+```
+~/PhpstormProjects/Mermaid (gh-pages) $ git push origin gh-pages
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/ericdorsey/MermaidExample.git
+ * [new branch]      gh-pages -> gh-pages
 ```
 ___
 
@@ -112,6 +120,7 @@ From [http://stackoverflow.com/a/28035663/853178](http://stackoverflow.com/a/280
 
 > So, according to the git-scm book, you can add two [RefSpecs](http://git-scm.com/book/it/v2/Git-Internals-The-Refspec#Pushing-Refspecs), by adding two push values to the repo config file ```.git/config```:
 
+Add the following two ```push``` lines to the ```[remote "origin"]``` section of the repo's ```.git/config```:
 
 ```
 [remote "origin"]
@@ -132,9 +141,12 @@ What does this do?
 
 Commit a change to ```master```.
 
-Push changes to both branches simultaneously -- **Note that we are running ** ```$ git push origin``` **with *no branch specified*** (ie, nothing after ```origin```). 
+No we push changes to both branches simultaneously. **Note that we are running ```git push origin``` with *no branch specified* ** (ie, nothing after ```origin```):
 
-Both branches updated:
+```$ git push origin```
+
+
+Both branches are updated:
 
 ```
 ~/Code/test123 (master) $ git push origin
@@ -148,6 +160,10 @@ To https://github.com/ericdorsey/test123.git
    32febb4..6710877  master -> master
 ```
 
+Note from above command: 
+ 
+**```master -> gh-pages```** and **```master -> master```**. 
+
 Changes will now be visible at:  
 
 ```
@@ -160,3 +176,4 @@ http://yourname.github.io/projectname
 * [http://git-scm.com/book/it/v2/Git-Internals-The-Refspec#Pushing-Refspecs](http://git-scm.com/book/it/v2/Git-Internals-The-Refspec#Pushing-Refspecs)
 * [http://stackoverflow.com/questions/5807459/github-mirroring-gh-pages-to-master](http://stackoverflow.com/questions/5807459/github-mirroring-gh-pages-to-master)
 * [https://pages.github.com/](https://pages.github.com/)
+* [http://www.thinkful.com/learn/a-guide-to-using-github-pages/](http://www.thinkful.com/learn/a-guide-to-using-github-pages/)
