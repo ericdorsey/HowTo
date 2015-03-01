@@ -141,7 +141,7 @@ What does this do?
 
 Commit a change to ```master```.
 
-No we push changes to both branches simultaneously. **Note that we are running ```git push origin``` with *no branch specified*** (ie, nothing after ```origin```):
+No we push changes to both branches simultaneously. **Note that we are running ```git push origin``` with no branch specified** (ie, nothing after ```origin```):
 
 ```$ git push origin```
 
