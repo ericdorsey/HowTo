@@ -10,9 +10,13 @@ ___
 
 * [Brew](Brew/)
   * Like ```apt-get``` for OSX. 
-* [MAMP](MAMP/)
-  * Standalone, super easy to configure MySQL, Apache, PHP server 
+* [Install Elementary (Freya) on 2009 Macbook Pro](ElemOS2009MBP)
 * [How to setup, use, and push content to GitHub Pages](GitHubProjectPages)
+  * Pages hosted at http://yourusername.github.io/projectname
 * [Mac Host: Install & configure Ubuntu Server (headless) guest VM](HeadlessUbuntuGuest/)
-  * Uses Virtualbox
- * [Markdown](Markdown/)
+  * Using Virtualbox.  
+* [MAMP](MAMP/)
+  * Standalone, super easy to configure MySQL, Apache, PHP server  
+* [Markdown](Markdown/)
+* [Useful Command Line](UsefulCommandLine/)
+* [Useful Git](UsefulGit/)

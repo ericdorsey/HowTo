@@ -37,6 +37,19 @@ Color coded commit history, one per line
 ```
 $ git log --oneline --abbrev-commit --all --graph --decorate --color
 ```
+___
+
+### Diffs
+
+[http://git-scm.com/docs/git-diff](http://git-scm.com/docs/git-diff)
+
+Compare the version before the last commit and the last commit.
+
+```
+$ git diff HEAD^ HEAD
+```
+
+___
 
 ### Fast Forward
 
