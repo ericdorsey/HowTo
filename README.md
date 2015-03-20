@@ -1,7 +1,7 @@
-### Collection of Useful*:
+### Collection of Useful (*):  
 
-* **How To's**  
-* **Walkthroughs**  
+* **How To's**
+* **Walkthroughs**
 * **Documentation**
 ___
 **useful to me, anyway, and possibly you*
