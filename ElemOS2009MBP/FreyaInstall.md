@@ -6,6 +6,11 @@
 
 ___
 
+### Install rEFInd via OSX
+
+[http://www.rodsbooks.com/refind/installing.html#installsh](http://www.rodsbooks.com/refind/installing.html#installsh)
+___
+
 ### System freeze on boot
 ```nomodeset``` issue,
 
@@ -89,7 +94,24 @@ drwxrwxr-x  7 501 dialout  4096 Mar 15 12:18 refind
  $ sudo ./install.sh 
 ```
 ___
-### Install GVim
+
+```
+sudo apt-get install elementary-tweaks
+```
+
+### Help resolve Gtk errors on launching gVim
+
+```
+sudo apt-get install gtk2-engines-pixbuf
+```
+
+### To be able to ssh into box:
+
+```
+sudo apt-get install openssh-server
+```
+
+### Install gVim
 
 ```
  $ sudo apt-get install gvim
