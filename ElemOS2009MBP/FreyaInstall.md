@@ -199,6 +199,8 @@ ___
 ### Kill Bluetooth
 From [http://askubuntu.com/questions/67758/how-can-i-deactivate-bluetooth-on-system-startup](http://askubuntu.com/questions/67758/how-can-i-deactivate-bluetooth-on-system-startup)
 
+Makes bluetooth icon in upper right menu off by default on boot. 
+
 Add:
 
 ```
