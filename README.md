@@ -19,6 +19,6 @@ ___
   * Using Virtualbox.  
 * [MAMP](MAMP/)
   * Standalone, super easy to configure MySQL, Apache, PHP server  
-* [Markdown](Markdown/)
-* [Useful Command Line](UsefulCommandLine/)
+* [Markdown](Markdown/Markdown.md)
+* [Useful Command Line](UsefulCommandLine/UsefulCLI.md)
 * [Useful Git](UsefulGit/UsefulGit.md)
