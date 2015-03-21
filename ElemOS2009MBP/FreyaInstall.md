@@ -3,8 +3,11 @@
 * [http://www.rodsbooks.com/refind/linux.html#efistub](http://www.rodsbooks.com/refind/linux.html#efistub)
 * [http://www.rodsbooks.com/refind/installing.html#installsh](http://www.rodsbooks.com/refind/installing.html#installsh)
 * [http://elementary.io/support](http://elementary.io/support)
+
 ___
-```nomodeset``` issue
+
+### System freeze on boot
+```nomodeset``` issue,
 
 From:
 [http://sourceforge.net/p/refind/discussion/general/thread/c30a6920/](http://sourceforge.net/p/refind/discussion/general/thread/c30a6920/)
@@ -53,13 +56,9 @@ ___
 > You did it right, EXCEPT that you should omit the ```intird=boot\initrd.img-3.13.0-46-generic``` part. rEFInd can figure out which initrd file to link to which kernel, based on their version strings, so you don't need to include such a specification unless you deviate from the normal (for most distributions) naming of initrd files.
  
 > Incidentally, the ```mkrlconf.sh``` script that comes with rEFInd will create a ```/boot/refind_linux.conf``` file. It would probably omit the necessary nomodeset option, but you can always add that back. If you were to run it now, it would refuse to create a new file because one already exists, but you could rename yours beforehand or use the ```--force``` option to force it to do so. --[Roderick W. Smith](https://sourceforge.net/u/srs5694/profile/)
+
+Above reply worked. 
 ___
-
-### Install GVim
-
-```
- $ sudo apt-get install gvim
-```
 
 ### Re-run rEFInd installer in Elementary
 Previously had run this in OSX, but it didn't create any folder structure under ```/boot/```, running again inside Elementary it created ```/boot/efi/EFI/BOOT```
@@ -89,6 +88,13 @@ drwxrwxr-x  7 501 dialout  4096 Mar 15 12:18 refind
 
  $ sudo ./install.sh 
 ```
+___
+### Install GVim
+
+```
+ $ sudo apt-get install gvim
+```
+
 
 ### Install Node Package Manager
 ```
@@ -162,10 +168,11 @@ gateway 192.168.1.1
 
 ```
 $ sudo /etc/init.d/networking restart
-
 ```
 
-### Automatic updates
+___
+
+### Automatic updates at 4AM
 
 Create ```Auto.sh```:
 ```
@@ -185,4 +192,19 @@ Add entry in ```root``` crontab:
 
 ```
 0 4 * * * /home/eha/Code/AutoUpdates/Auto.sh
+```
+
+___
+
+### Kill Bluetooth
+From [http://askubuntu.com/questions/67758/how-can-i-deactivate-bluetooth-on-system-startup](http://askubuntu.com/questions/67758/how-can-i-deactivate-bluetooth-on-system-startup)
+
+Add:
+
+```
+$ sudo gvim /etc/rc.local
+```
+
+```
+rfkill block bluetooth
 ```
