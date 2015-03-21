@@ -3,6 +3,8 @@
 * **How To's**
 * **Walkthroughs**
 * **Documentation**
+* **Friction logs**
+  * What is a friction log? Useful notes / information / documentation when doing something new. "What I did along the way" notes.
 
 ___
 
