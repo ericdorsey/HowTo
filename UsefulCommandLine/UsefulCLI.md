@@ -19,8 +19,24 @@ ___
 ```
 $ grep -r "foo" .
 ```
+Friday, 20. March 2015 09:56PM 
 ___
 
+Just print (not run) item from ```$ history```
+
+```
+eha@pfreya:~/Code/AutoUpdates/log$ history | grep apt
+    1  sudo apt-get update && sudo apt-get upgrade
+    9  sudo apt-get install gvim
+  251  sudo apt-get install npm
+```
+
+```
+$ !9:p
+sudo apt-get install gvim
+```
+
+___
 ### Pull matching URLs (using ```grep```) from one file, output to another:
 
 ```
