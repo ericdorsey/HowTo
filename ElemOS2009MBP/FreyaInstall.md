@@ -133,3 +133,56 @@ $ sudo apt-get -f install
 $ sudo apt-get install git
 
 ```
+___
+### Static IP
+
+*Note that DHCP worked by default w/ no config*
+
+```
+sudo gvim /etc/network/interfaces
+
+```
+
+Added the ```auto eth0``` text:
+
+```
+# interfaces(5) file used by ifup(8) and ifdown(8)
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+address 192.168.1.30
+netmask 255.255.255.0
+network 192.168.1.0
+broadcast 192.168.1.255
+gateway 192.168.1.1
+
+```
+
+```
+$ sudo /etc/init.d/networking restart
+
+```
+
+### Automatic updates
+
+Create ```Auto.sh```:
+```
+#!/bin/bash
+# Runs every day at 4AM, see root crontab
+# /var/log/apt/term.log
+# /var/log/dpkg.log
+myDate=$(date +"%Y-%m-%d | %r")
+updateString="'apt-get update -y' and 'apt-get upgrade -y' ran | $myDate"
+echo $updateString >> /home/eha/Code/AutoUpdates/log/AutoUpdate.log 
+#echo $updateString
+apt-get update -y && apt-get-upgrade -y
+
+```
+
+Add entry in ```root``` crontab:
+
+```
+0 4 * * * /home/eha/Code/AutoUpdates/Auto.sh
+```
