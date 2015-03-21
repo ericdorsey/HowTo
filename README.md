@@ -19,4 +19,4 @@ ___
   * Standalone, super easy to configure MySQL, Apache, PHP server  
 * [Markdown](Markdown/)
 * [Useful Command Line](UsefulCommandLine/)
-* [Useful Git](UsefulGit/)
+* [Useful Git](UsefulGit/UsefulGit.md)

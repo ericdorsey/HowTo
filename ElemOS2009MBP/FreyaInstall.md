@@ -2,6 +2,7 @@
 
 * [http://www.rodsbooks.com/refind/linux.html#efistub](http://www.rodsbooks.com/refind/linux.html#efistub)
 * [http://www.rodsbooks.com/refind/installing.html#installsh](http://www.rodsbooks.com/refind/installing.html#installsh)
+* [http://elementary.io/support](http://elementary.io/support)
 ___
 ```nomodeset``` issue
 
@@ -48,6 +49,12 @@ Added to ```refind_linx.conf```:
 Would definitely like to know the right way to do all this, though?
 
 ___
+
+> You did it right, EXCEPT that you should omit the ```intird=boot\initrd.img-3.13.0-46-generic``` part. rEFInd can figure out which initrd file to link to which kernel, based on their version strings, so you don't need to include such a specification unless you deviate from the normal (for most distributions) naming of initrd files.
+ 
+> Incidentally, the ```mkrlconf.sh``` script that comes with rEFInd will create a ```/boot/refind_linux.conf``` file. It would probably omit the necessary nomodeset option, but you can always add that back. If you were to run it now, it would refuse to create a new file because one already exists, but you could rename yours beforehand or use the ```--force``` option to force it to do so. --[Roderick W. Smith](https://sourceforge.net/u/srs5694/profile/)
+___
+
 ### Install GVim
 
 ```
