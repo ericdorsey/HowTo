@@ -2,8 +2,6 @@
 * [http://git-scm.com/](http://git-scm.com/)
 * [https://www.atlassian.com/git/tutorials/](https://www.atlassian.com/git/tutorials/)
 
-
-
 ### Branches
 
 * [https://pcottle.github.io/learnGitBranching/](https://pcottle.github.io/learnGitBranching/)
@@ -18,16 +16,34 @@ Show all branches
 ```
 
 
-See last commits on all branches
+#### See last commits on all branches
 
 ```
 git branch -v
 ```
 
-See diff on two branches
+#### See diff on two branches
 
 ```
 $ git diff master..gh-pages
+```
+
+#### Delete unneeded branch (already been merged)
+
+```
+~/Code/HostMAC (master) $ git branch
+  bcambl-multios_arp_mac_regex
+  bcambl-regex-ip-check
+  getping_to_msResponse
+* master
+  osx
+~/Code/HostMAC (master) $ git branch -d osx
+Deleted branch osx (was cdcbab8).
+~/Code/HostMAC (master) $ git branch
+  bcambl-multios_arp_mac_regex
+  bcambl-regex-ip-check
+  getping_to_msResponse
+* master
 ```
 
 #### Force local ```master``` to match repo after Pull Request
@@ -55,7 +71,7 @@ ___
 
 ### Pretty Commit History
 
-Color coded commit history, one per line
+#### Color coded commit history, one per line
  
 ```
 $ git log --oneline --abbrev-commit --all --graph --decorate --color
@@ -66,7 +82,7 @@ ___
 
 [http://git-scm.com/docs/git-diff](http://git-scm.com/docs/git-diff)
 
-Compare the version before the last commit and the last commit.
+#### Compare the version before the last commit and the last commit.
 
 ```
 $ git diff HEAD^ HEAD
@@ -78,7 +94,7 @@ ___
 
 [http://ariya.ofilabs.com/2013/09/fast-forward-git-merge.html](http://ariya.ofilabs.com/2013/09/fast-forward-git-merge.html)
 
-Turn fast-forward off
+#### Turn fast-forward off
 
 [http://stackoverflow.com/questions/16453941/how-to-set-no-fast-forward-as-default-when-using-git-merge](http://stackoverflow.com/questions/16453941/how-to-set-no-fast-forward-as-default-when-using-git-merge)
 
