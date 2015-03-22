@@ -14,7 +14,7 @@ ___
   * Like ```apt-get``` for OSX. 
 * [Install Elementary (Freya) on 2009 Macbook Pro](ElemOS2009MBP)
 * [How to setup, use, and push content to GitHub Pages](GitHubProjectPages)
-  * Pages hosted at http://yourusername.github.io/projectname
+  * Pages hosted at ```http://yourusername.github.io/projectname```
 * [Mac Host: Install & configure Ubuntu Server (headless) guest VM](HeadlessUbuntuGuest/)
   * Using Virtualbox.  
 * [MAMP](MAMP/)
