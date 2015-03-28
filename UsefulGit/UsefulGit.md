@@ -1,6 +1,23 @@
+## Links
+
 ### General / Misc
 * [http://git-scm.com/](http://git-scm.com/)
 * [https://www.atlassian.com/git/tutorials/](https://www.atlassian.com/git/tutorials/)
+
+### Educational
+
+* [http://onlywei.github.io/explain-git-with-d3/](http://onlywei.github.io/explain-git-with-d3/)
+
+### Two factor auth
+
+* [https://github.com/blog/1614-two-factor-authentication](https://github.com/blog/1614-two-factor-authentication)
+* [https://github.com/blog/1614-two-factor-authentication](https://github.com/blog/1614-two-factor-authentication)
+* [https://help.github.com/articles/creating-an-access-token-for-command-line-use/](https://help.github.com/articles/creating-an-access-token-for-command-line-use/)
+* [https://help.github.com/articles/caching-your-github-password-in-git/#platform-all](https://help.github.com/articles/caching-your-github-password-in-git/#platform-all)
+* [http://blog.apericore.com/enabling-https-access-to-your-github-repositories-after-enabling-two-factor-authentication/](http://blog.apericore.com/enabling-https-access-to-your-github-repositories-after-enabling-two-factor-authentication/)
+___
+
+## Commands
 
 ### Branches
 
@@ -15,6 +32,11 @@ Show all branches
 * master
 ```
 
+#### New Branch ```create-file-function```
+
+```
+$ git checkout -b create-file-function
+```
 
 #### See last commits on all branches
 
