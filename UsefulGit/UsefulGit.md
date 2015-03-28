@@ -89,7 +89,7 @@ Date:   Thu Mar 19 23:11:32 2015 -0600
     OSX functionality improvments
 ```
 
-___
+
 
 ### Pretty Commit History
 
