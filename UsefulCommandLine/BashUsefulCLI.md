@@ -1,19 +1,4 @@
 
-
-### Disable / Enable AirDrop 
-
-Turn AirDrop off:
-
-```defaults write com.apple.NetworkBrowser DisableAirDrop -bool YES```
-
-Turn AirDrop back on:
-
-```defaults write com.apple.NetworkBrowser DisableAirDrop -bool NO```
-
-You’ll need to logout and log back in to see the changes.
-
-___
-
 ### Recursive ```grep``` for text "foo" from current folder down
 
 ```
@@ -45,7 +30,7 @@ $ grep -oE '\b(https?|ftp|file)://[-A-Za-z0-9+&@#/%?=~_|!:,.;]*[-A-Za-z0-9+&@#/%
 
 ___
 
-### Safely use ```rm``` 
+### Safely use ```rm``` (w/ confirmation)
 
 Use the ```-i``` confirmation flag when running ```rm``` commands. From ```$ man rm```:
 

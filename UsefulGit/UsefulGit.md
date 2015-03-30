@@ -112,6 +112,46 @@ $ git diff HEAD^ HEAD
 
 ___
 
+### Errors
+
+* [http://christoph.ruegg.name/blog/git-howto-revert-a-commit-already-pushed-to-a-remote-reposit.html](http://christoph.ruegg.name/blog/git-howto-revert-a-commit-already-pushed-to-a-remote-reposit.html)
+
+#### Last `$ git push origin master` was wrong. 
+
+Details: (Owner of the remote, no one else is contributing on this repo). We want to reset the remote back to last commit.
+
+On `master` of local branch:
+
+```
+$ git reset HEAD^ --hard
+HEAD is now at 95f318a add random image functionality
+```
+
+Fails because origin (remote) ahead of master (local):
+
+```
+$ git push origin master
+To https://github.com/ericdorsey/Hubot.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/ericdorsey/Hubot.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+```
+
+We can force the push to overwrite remote with `-f`:
+
+```
+~/Code/Hubot (master) $ git push origin master -f
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/ericdorsey/Hubot.git
+ + 149f043...95f318a master -> master (forced update)
+```
+
+
+___
+
 ### Fast Forward
 
 [http://ariya.ofilabs.com/2013/09/fast-forward-git-merge.html](http://ariya.ofilabs.com/2013/09/fast-forward-git-merge.html)
@@ -123,3 +163,64 @@ ___
 ```
 git config --global merge.ff false
 ```
+
+___
+
+### File Rename
+
+#### Update Files Renamed via Bash 
+
+```
+$ mv UsefulCLI.md BashUsefulCLI.md
+
+```
+
+```
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    UsefulCLI.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	BashUsefulCLI.md
+	OSXUsefulCLI.md
+```
+
+```
+$ git rm UsefulCLI.md
+rm 'UsefulCommandLine/UsefulCLI.md'
+~/HowTo/UsefulCommandLine (master +) $ git add BashUsefulCLI.md
+```
+
+```
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	renamed:    UsefulCLI.md -> BashUsefulCLI.md
+	new file:   OSXUsefulCLI.md
+```
+
+#### Rename a File via Git
+
+```
+$ ls
+foo.txt
+```
+
+```
+$ git mv foo.txt foo2.txt
+~/temp/baz (master +) $ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	renamed:    foo.txt -> foo2.txt
+```
+

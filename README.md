@@ -15,7 +15,7 @@ ___
 * [Install Elementary (Freya) on 2009 Macbook Pro](ElemOS2009MBP)
 * [How to setup, use, and push content to GitHub Pages](GitHubProjectPages)
   * Pages hosted at ```http://yourusername.github.io/projectname```
-* [Mac Host: Install & configure Ubuntu Server (headless) guest VM](HeadlessUbuntuGuest/)
+* [Install & configure Ubuntu Server (headless) guest VM on OSX host](HeadlessUbuntuGuest/)
   * Using Virtualbox.  
 * [MAMP](MAMP/)
   * Standalone, super easy to configure MySQL, Apache, PHP server  
