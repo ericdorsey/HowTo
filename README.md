@@ -22,3 +22,5 @@ ___
 * [Markdown](Markdown/Markdown.md)
 * [Useful Command Line](UsefulCommandLine/UsefulCLI.md)
 * [Useful Git](UsefulGit/UsefulGit.md)
+
+[foo.md](foo.md)

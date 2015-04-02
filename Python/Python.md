@@ -26,3 +26,8 @@ Requires: markupsafe
 $ pip freeze | grep Jinja2
 Jinja2==2.7.3
 ```
+#### Upgrade `pip`
+
+```
+$ sudo pip install -U pip
+```
