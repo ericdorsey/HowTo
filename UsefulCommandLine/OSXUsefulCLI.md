@@ -20,3 +20,12 @@ ProductName:	Mac OS X
 ProductVersion:	10.10.2
 BuildVersion:	14C1510
 ```
+
+___
+
+#### Paste from clipboard into a file 
+
+```
+$ pbpaste > foo.txt
+```
+

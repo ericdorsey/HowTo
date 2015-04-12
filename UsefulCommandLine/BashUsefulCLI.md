@@ -4,7 +4,7 @@
 ```
 $ grep -r "foo" .
 ```
-Friday, 20. March 2015 09:56PM 
+
 ___
 
 Just print (not run) item from ```$ history```
@@ -30,7 +30,7 @@ $ grep -oE '\b(https?|ftp|file)://[-A-Za-z0-9+&@#/%?=~_|!:,.;]*[-A-Za-z0-9+&@#/%
 
 ___
 
-### Safely use ```rm``` (w/ confirmation)
+### Safely use ```rm``` (ie, with confirmation)
 
 Use the ```-i``` confirmation flag when running ```rm``` commands. From ```$ man rm```:
 
